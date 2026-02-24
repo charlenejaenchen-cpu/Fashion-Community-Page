@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;                 /* lässt definition von box width und height durch width und height definiert sein, statt durch width und hight und padding und margin und border */
+}
+
+html, body {
+    margin: 5px 2.5px;
+}
+
+.landing-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-block {
+    text-align: center;
+    width: 600px;
+}
+
+/* LANDING PAGE DESIGN SECTION */
+
+.title-block h1 {
+    margin: 0;
+}
+
+.title-block p{
+    margin-top: 40vh;
+    margin-bottom: 45vh;
+    color: #D01C1F;
+    font-size: 30px;
+}
+
+.article-swipe {
+    display: flex;
+    flex-wrap: nowrap;                      /*verhindert Zeilenumbruch bei flex items*/
+    gap: 1rem;
+    padding: 0;
+    overflow-x: auto;           
+    scroll-behavior: smooth;
+}
+
+.article-cards {
+    position: relative;                     /* bezieht sich alles darauf */
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 300px;
+    height: 350px;
+    background-size: cover;
+    text-align: right;
+}
+
+.article-cards-textblock {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    opacity: 0.8;
+}
+
+.article-cards-textblock h4,
+.article-cards-textblock h6 {
+    margin: 0;
+    padding-right: 5px;
+    padding-left: 5px;
+    color: white;
+}
+
+.subpage-headline {
+    width: fit-content;
+    margin-left: auto;                  
+    margin-right: 0;
+    margin-top: 30px;
+    text-align: right;
+    color: black;
+    font-size: 350px;
+}
+
+
+
+/* ABOUT PAGE DESIGN SECTION */
+
+.about-text {
+    width: 1200px; 
+    margin-top: 30vh;                    
+    margin-left: auto;                 
+    margin-right: auto;  
+    text-align: justify;
+    color: black;
+    font-size: 30px; 
+}
+
+.about-body {
+    height: 100vh;
+}
+
+#subpage-headline-about {
+    margin: 0;
+    width: fit-content;
+    text-align: right;
+    color: black;
+    font-size: 350px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.about-text p {
+  margin: 0;                        /* entfernt Standardabstände die automatisch bei p eingefügt werden */
+}
+
+
+
+
+@media (max-width: 480px) {
+    .subpage-headline {
+        width: fit-content;
+        font-size: 96px;
+    }
+
+    #subpage-headline-about {
+        font-size: 96px;
+    }
+
+    .about-text {
+        width: 400px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 950px) {
+    .subpage-headline {
+        width: fit-content;
+        font-size: 96px;
+    }
+
+    #subpage-headline-about {
+        font-size: 96px;
+    }
+
+    .about-text {
+        width: 600px;
+        font-size: 20px;
+        margin-top: 15vh;                   
+    }
+}
