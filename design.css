@@ -109,7 +109,7 @@ html, body {
 }
 
 
-
+/* MEDIA QUERIES */
 
 @media (max-width: 480px) {
     .subpage-headline {
