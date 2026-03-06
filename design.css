@@ -2,6 +2,10 @@
     box-sizing: border-box;                 /* lässt definition von box width und height durch width und height definiert sein, statt durch width und hight und padding und margin und border */
 }
 
+html {
+    width: 100%;
+}
+
 html, body {
     margin: 5px 2.5px;
 }
@@ -111,6 +115,26 @@ html, body {
 
 /* MEDIA QUERIES */
 
+/* iPad */
+@media (max-width: 1024px) {
+    .subpage-headline {
+        width:fit-content;
+        font-size: 200px;
+    }
+
+    #subpage-headline-about {
+        font-size: 200px;
+    }
+
+    .about-text {
+        width: 600px;
+        font-size: 20px;
+        margin-top: 15vh;                   
+    }
+}
+
+
+/* iPhone */
 @media (max-width: 480px) {
     .subpage-headline {
         width: fit-content;
@@ -124,22 +148,5 @@ html, body {
     .about-text {
         width: 400px;
         font-size: 20px;
-    }
-}
-
-@media (max-width: 950px) {
-    .subpage-headline {
-        width: fit-content;
-        font-size: 96px;
-    }
-
-    #subpage-headline-about {
-        font-size: 96px;
-    }
-
-    .about-text {
-        width: 600px;
-        font-size: 20px;
-        margin-top: 15vh;                   
     }
 }
