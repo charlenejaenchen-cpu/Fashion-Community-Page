@@ -26,7 +26,7 @@ html, body {
     margin: 0;
 }
 
-.title-block p{
+.title-block p {
     margin-top: 40vh;
     margin-bottom: 45vh;
     color: #D01C1F;
@@ -109,16 +109,24 @@ html, body {
 }
 
 .about-text p {
-  margin: 0;                        /* entfernt Standardabstände die automatisch bei p eingefügt werden */
+    margin: 0;                        /* entfernt Standardabstände die automatisch bei p eingefügt werden */
 }
+
+
+/* PROFILE PAGE DESIGN SECTION */
+
+
 
 
 /* MEDIA QUERIES */
 
+/* FORM UPDATE !!!!!!!!!!!!! */
+
+
 /* iPad */
 @media (max-width: 1024px) {
     .subpage-headline {
-        width:fit-content;
+        width: fit-content;
         font-size: 200px;
     }
 

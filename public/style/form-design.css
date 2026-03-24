@@ -1,0 +1,230 @@
+/* =========================================
+   CONTACT FORM — two-panel layout
+   Figma: node 91-512 "contact form Big Screen"
+   ========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Afacad:wght@700&family=Montserrat:wght@300;400;500&display=swap');
+
+/* Outer wrapper — row, centred */
+.contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+/* ---- Left panel (blue info panel) ---- */
+.contact-info-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 30px;
+    padding: 50px;
+    width: 550px;
+    height: 550px;
+    background-color: #0845BA;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+.contact-info-fields {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 35px;
+}
+
+.contact-info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+}
+
+.contact-info-label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1em;
+    color: #FFFFFF;
+}
+
+.contact-info-value {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1em;
+    color: #FFFFFF;
+}
+
+.contact-info-heading {
+    font-family: 'Afacad', sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 1em;
+    color: #FFFFFF;
+    text-align: right;
+    margin: 0;
+}
+
+/* ---- Right panel (form) ---- */
+.contact-form-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 50px;
+    width: 550px;
+    height: 550px;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 450px;
+}
+
+/* Name + Email side by side */
+.contact-form-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: stretch;
+    gap: 15px;
+}
+
+.contact-form-field {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    width: 210px;
+}
+
+.contact-form-field--full {
+    width: 100%;
+    align-self: stretch;
+}
+
+/* Labels */
+.contact-form label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1em;
+    color: #000000;
+}
+
+/* Inputs */
+.contact-form input {
+    padding: 15px;
+    background-color: #F0F0F0;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #1E1E1E;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.contact-form input::placeholder {
+    color: #ADADAD;
+}
+
+/* Textarea */
+.contact-form textarea {
+    padding: 15px;
+    background-color: #F0F0F0;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #1E1E1E;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 120px;
+    resize: none;
+}
+
+.contact-form textarea::placeholder {
+    color: #ADADAD;
+}
+
+/* Submit button */
+.contact-form button {
+    width: 214px;
+    padding: 15px;
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1em;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center;
+}
+
+.contact-form button:hover {
+    background-color: #0845BA;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 1024px) {
+    .contact-info-panel,
+    .contact-form-panel {
+        width: 100%;
+        height: auto;
+    }
+
+    .contact-info-heading {
+        font-size: 60px;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-info-panel,
+    .contact-form-panel {
+        padding: 30px;
+    }
+
+    .contact-info-heading {
+        font-size: 40px;
+    }
+
+    .contact-info-value {
+        font-size: 20px;
+    }
+
+    .contact-form-row {
+        flex-direction: column;
+    }
+
+    .contact-form-field {
+        width: 100%;
+    }
+
+    .contact-form {
+        gap: 30px;
+    }
+}

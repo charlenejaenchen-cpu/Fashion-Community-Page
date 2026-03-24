@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EVENTS</title>
 
-    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="style/design.css">
+    <link rel="stylesheet" href="style/form-design.css">
+
 </head>
 
 <body>
    <div class="landing-block">
 
         <div>
-            <a href="index.html">HOME</a><br>
-            <a href="about.html">ABOUT</a><br>
-            <a href="events.html">EVENTS</a><br>
-            <a href="articles.html">ARTICLES</a>
+            <a href="/index">HOME</a><br>
+            <a href="/about">ABOUT</a><br>
+            <a href="/events">EVENTS</a><br>
+            <a href="/articles">ARTICLES</a>
         </div>
 
         <div class="title-block"> 
@@ -23,10 +25,54 @@
         </div>
 
         <div>
-            <a href="profile.html">PROFILE</a>
+            <a href="/profile">PROFILE</a>
+        </div>
+        
+    </div> 
+
+   <div class="contact-wrapper">
+
+        <!-- Left panel: contact info -->
+        <div class="contact-info-panel">
+            <div class="contact-info-fields">
+                <div class="contact-info-item">
+                    <span class="contact-info-label">Email </span>
+                    <span class="contact-info-value">culture@contact.com</span>
+                </div>
+                <div class="contact-info-item">
+                    <span class="contact-info-label">Phone</span>
+                    <span class="contact-info-value">+49 123 456790</span>
+                </div>
+                <div class="contact-info-item">
+                    <span class="contact-info-label">Address</span>
+                    <span class="contact-info-value">culture GmbH<br>Donaustraße 44,<br>12043 Berlin</span>
+                </div>
+            </div>
+            <h2 class="contact-info-heading">contact us.</h2>
         </div>
 
-    </div> 
+        <!-- Right panel: form -->
+        <div class="contact-form-panel">
+            <form class="contact-form" action="/profile" method="post">
+                <div class="contact-form-row">
+                    <div class="contact-form-field">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="user_name" placeholder="Your full name">
+                    </div>
+                    <div class="contact-form-field">
+                        <label for="email">Email </label>
+                        <input type="email" id="email" name="user_email" placeholder="Your Email address">
+                    </div>
+                </div>
+                <div class="contact-form-field contact-form-field--full">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="user_message" placeholder="Write something..."></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+    </div>
 
     <div class="subpage-headline">
         profile.

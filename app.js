@@ -4,6 +4,8 @@ import path from 'path';                                                        
 import { fileURLToPath } from 'url';
 import fs from 'fs';                                                                // to be able to check for files in 'public'
 
+//Exercise LU
+import data from './data.json' with { type: 'json' };
 
 const app = express();
 const PORT = 3000;
@@ -18,14 +20,17 @@ const __dirname = path.dirname(__filename);
 app.use(logger)
 app.use(express.static(path.join(__dirname, 'public')));                            // googled: absolute path, instead of relative Pfad
 
-//brauche ich erste bei forms 
-/* 
-app.use(express.urlencoded({extended: true}))
-*/
+app.use(express.urlencoded({extended: true}))                                       //to parse data from forms
 
 
 
 // --- ROUTING ---
+
+//Exercise LU
+app.get('/LU', (req, res) => {
+    console.log(data)
+    res.send(data[0].title1)
+})
 
 // static route: redirect Homepaige with /home (must come before dynamic route)
 app.get('/home', (req, res) => {
@@ -50,12 +55,10 @@ app.get('/:slug', (req, res) => {
         }
 });
 
-// static route to default Homepaige 
-// (I know I don't need this and it doesn't technically work because of line 19 but I didn't know what i coud use as another static route, so i put it anywasy and will delete later)
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'))                      // Again: rather use absolute path them relative
-});
-
+app.post('/profile', (request, response) => {
+  console.log('Contact form submission: ', request.body)
+  response.send('Thank you for your message. We will be in touch soon.')
+})
 
 // --- SERVER ON ---
 
