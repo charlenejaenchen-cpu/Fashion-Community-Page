@@ -20,7 +20,7 @@ html, body {
     width: 600px;
 }
 
-/* LANDING PAGE DESIGN SECTION */
+/* --- LANDING PAGE DESIGN SECTION --- */
 
 .title-block h1 {
     margin: 0;
@@ -81,7 +81,7 @@ html, body {
 
 
 
-/* ARTICLES PAGE DESIGN SECTION */
+/* --- ARTICLES PAGE DESIGN SECTION ---  */
 
 .info-text {
     margin-top: 30px;
@@ -89,7 +89,7 @@ html, body {
 
 
 
-/* ABOUT PAGE DESIGN SECTION */
+/* --- ABOUT PAGE DESIGN SECTION --- */
 
 .about-text {
     width: 1200px; 
@@ -121,7 +121,7 @@ html, body {
 }
 
 
-/* PROFILE PAGE DESIGN SECTION */
+/* --- FORMS DESOIGN SECTION --- */
 
 
 
@@ -359,8 +359,15 @@ html, body {
 }
 
 
+/* =============================================
+   Article Upload Form — Styles
+   ============================================= */
 
-/* MEDIA QUERIES */
+
+
+
+
+/* --- MEDIA QUERIES --- */
 
 
 /* iPad */

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../includes/head', {title: 'culture | ARTICLES'}) %>
+
+<body>
+    <div class="landing-block">
+
+        <div>
+            <a href="/index">HOME</a><br>
+            <a href="/about">ABOUT</a><br>
+            <a href="/events">EVENTS</a><br>
+            <a href="/articles">ARTICLES</a>
+        </div>
+
+        <div class="title-block"> 
+            <h1>culture.</h1>
+        </div>
+
+        <div>
+            <a href="/profile">PROFILE</a>
+        </div>
+
+    </div> 
+
+    <div>
+        <h1><%= article.title %></h1>
+        <p><strong>Author:</strong> <%= article.author %></p>
+        <p><em>Published on:</em> <%= article.date %></p>
+
+        <article>
+            <p><%= article.article %></p>
+        </article>
+    </div>
+    <div>
+        <section>
+            <img src="<%= article.image %>" alt="<%= article.title %>">
+        </section>
+    </div>
+
+    <div>
+        <form action="/articles/<%= article.slug %>/delete" method="post">
+            <button>delete</button>
+        </form>
+    </div>
+
+    <div>
+        <form action="/articles/<%= article.slug %>/update" method="post">
+            <input type="text" name="title" placeholder="New article title"><br>
+            <textarea name="article" ><%= article.article %></textarea><br>
+            <button>update</button>
+        </form>
+    </div>
+
+</body>
+</html>

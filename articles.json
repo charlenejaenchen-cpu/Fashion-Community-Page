@@ -1,27 +1,67 @@
 [
     {
+        "id": "1",
         "title": "Article 1",
         "author": "Author",
-        "describtion": "This is Article 1"
+        "describtion": "This is Article 1",
+        "text": "This is the text",
+        "date": "publishing date",
+        "image": "article image",
+        "created_at": "date",
+        "updated_at": "date",
+        "genre_id": "genere",
+        "slug": "article-1"      
     },
     {
+       "id": "2",
         "title": "Article 2",
-         "author": "Author",
-        "describtion": "This is Article 2"
+        "author": "Author",
+        "describtion": "This is Article 2",
+        "text": "This is the text",
+        "date": "publishing date",
+        "image": "article image",
+        "created_at": "date",
+        "updated_at": "date",
+        "genre_id": "genere",
+        "slug": "article-2"     
     },
     {
+        "id": "3",
         "title": "Article 3",
-         "author": "Author",
-        "describtion": "This is Article 3"
+        "author": "Author",
+        "describtion": "This is Article 3",
+        "text": "This is the text",
+        "date": "publishing date",
+        "image": "article image",
+        "created_at": "date",
+        "updated_at": "date",
+        "genre_id": "genere",
+        "slug": "article-3"     
     },
     {
+        "id": "4",
         "title": "Article 4",
-         "author": "Author",
-        "describtion": "This is Article 4"
+        "author": "Author",
+        "describtion": "This is Article 4",
+        "text": "This is the text",
+        "date": "publishing date",
+        "image": "article image",
+        "created_at": "date",
+        "updated_at": "date",
+        "genre_id": "genere",
+        "slug": "article-4"     
     },
     {
-        "title": "Article 4",
-         "author": "Author",
-        "describtion": "This is Article 4"
+        "id": "5",
+        "title": "Article 5",
+        "author": "Author",
+        "describtion": "This is Article 5",
+        "text": "This is the text",
+        "date": "publishing date",
+        "image": "article image",
+        "created_at": "date",
+        "updated_at": "date",
+        "genre_id": "genere",
+        "slug": "article-5"    
     }
 ]
